@@ -1,0 +1,133 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+	line-height: 1;
+	font-family: 'Pretendard';
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #252525;
+}
+
+input{font-family: 'Noto Sans KR', sans-serif;}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{border:0; margin:0; display: block;}
+
+a{text-decoration: none; color:#252525; display: block;}
+/* common */
+.inner{max-width: 1200px; margin:0 auto; padding:0 20px;}
+.title{text-align: center; color:#fff; font-size:38px; font-weight: 900; padding:20px 0 120px 0;}
+/*  */
+.sungwon_bg{width:100%; position: relative;}
+.sungwon_bg::after{content:""; width:100%; height: 100px; background: linear-gradient(to top, rgb(0, 0, 0) 3%, transparent); position:absolute; bottom:0;}
+.sungwon_bg img{width: 100%;}
+.sungwon_bg img:last-child{display: none;}
+/* main */
+.main{background:#000;}
+.section{padding-top:100px; padding-bottom: 100px;}
+.section .portfolio_wrap .pf_box{width:100%; position:relative; margin-bottom: 100px; background: #000;}
+.section .portfolio_wrap .pf_box:last-child{margin-bottom: 0;}
+.section .portfolio_wrap .pf_box .pf_inner{transition: all ease .6s; transform-origin: 50% 0%; position: relative;}
+.section .portfolio_wrap .pf_box:hover .pf_inner{animation: snip1436 0.45s linear forwards; animation-iteration-count: 1;}
+@keyframes snip1436 {
+	50% {
+	  -webkit-transform: scale(0.8) translateX(0%);
+	  transform: scale(0.8) translateX(0%);
+	  opacity: 0.5;
+	}
+	100% {
+	  -webkit-transform: scale(0.8) translateX(-150%);
+	  transform: scale(0.8) translateX(-150%);
+	  opacity: 0.5;
+	}
+  }
+.section .portfolio_wrap .pf_box .pf_bg{width:100%;}
+.section .portfolio_wrap .pf_box .pf_bg img{width:100%;}
+.section .portfolio_wrap .pf_box .pf_txt{width: 64%; position:absolute; top:0; left:0; height: 100%; padding:30px; box-sizing: border-box; display: flex; flex-direction: column; justify-content:center; display: none;}
+.section .portfolio_wrap .pf_box .pf_txt .pf_title{color:#fff; font-size:34px; font-weight:600; margin-bottom: 40px; text-shadow: 6px 3px 1px rgb(0 0 0);}
+.section .portfolio_wrap .pf_box .pf_txt ul li{color:#fff; margin-bottom:16px;}
+.section .portfolio_wrap .pf_box .pf_txt ul li em{padding-right:10px; font-size:20px; position:relative; display: inline-block;}
+.section .portfolio_wrap .pf_box .pf_txt ul li em::before{content: ''; width:1px; height:10px; position:absolute; top:50%; right:0; transform: translateY(-50%); background:#fff;}
+.section .portfolio_wrap .pf_box .pf_txt ul li span{font-size:14px; display: inline-block; padding-left: 10px;}
+.section .portfolio_wrap .pf_box .pf_img{width:36%; position:absolute; bottom:0; right:30px;}
+.section .portfolio_wrap .pf_box .pf_img img{max-width: 100%;}
+.section .portfolio_wrap .pf_box .view{position: absolute; top: 0; left: 0; bottom: 0; width: 100%; transform: scale(0.5) translate(0%, 0%); transform-origin: 50% 0%; z-index: 1; opacity: 0; padding: 20px 30px; 
+transition: all ease .6s; color:#fff; display: flex; flex-direction: column; justify-content: center;}
+.section .portfolio_wrap .pf_box:hover .view{transform: scale(1) translate(0, 0); opacity: 1; transition-delay: 0.35s;}
+.section .portfolio_wrap .pf_box .view .pf_title{color:#fff; font-size:34px; font-weight:600; margin-bottom: 40px; text-shadow: 6px 3px 1px rgb(0 0 0);}
+.section .portfolio_wrap .pf_box .view ul li{color:#fff; margin-bottom:16px;}
+.section .portfolio_wrap .pf_box .view ul li em{padding-right:10px; font-size:20px; position:relative; display: inline-block;}
+.section .portfolio_wrap .pf_box .view ul li em::before{content: ''; width:1px; height:10px; position:absolute; top:50%; right:0; transform: translateY(-50%); background:#fff;}
+.section .portfolio_wrap .pf_box .view ul li span{font-size:14px; display: inline-block; padding-left: 10px;}
+/* section02*/
+.section02{padding-bottom: 100px;}
+.section02 .sec2_subtxt{text-align: center; color:#fff; font-size:32px; line-height: 1.25; font-weight: 500;}
+.section02 .sec2_subtxt i{margin-left:10px;}
+.section02 .my_info{display: flex; margin-top:60px;}
+.section02 .my_info .info_box{width: 33.33333%; text-align: center; padding:100px 0;}
+.section02 .my_info .info_box:hover{background:#fff;}
+.section02 .my_info .info_box:hover .icon i{color:rgb(110, 207, 214);}
+.section02 .my_info .info_box:hover p{color:#252525;}
+.section02 .my_info .info_box .icon{margin-bottom: 16px;}
+.section02 .my_info .info_box .icon i{color:#fff; font-size:30px;}
+.section02 .my_info .info_box p{font-size:22px; font-weight: 500; color:rgb(110, 207, 214); margin-bottom: 8px;}
+.section02 .my_info .info_box span{color:gray;}
+.footer{background:#000; padding:10px 0;}
+.footer > div{text-align: center; color:gray; font-size:14px;}
+
+@media screen and (max-width:1000px){
+.sungwon_bg img:first-child{display: none;}
+.sungwon_bg img:last-child{display: block;}
+.section .portfolio_wrap .pf_box .view{position: unset; opacity: 1; transform: scale(1); padding:34px 0 0;}
+.section .portfolio_wrap .pf_box .view .pf_title{margin-bottom:28px; font-size:28px;}
+.section .portfolio_wrap .pf_box .view ul li em{display: block; margin-bottom: 6px; font-size:18px; font-weight: 600;}
+.section .portfolio_wrap .pf_box .view ul li em::before{display: none;}
+.section .portfolio_wrap .pf_box .view ul li span{padding:0; color:rgba(255, 255, 255, 0.712)}
+.section .portfolio_wrap .pf_box:hover .pf_inner{animation:unset;}
+.section02 .sec2_subtxt{font-size:22px;}
+}
+@media screen and (max-width:750px){
+.section02 .sec2_subtxt{font-size:22px;}
+.section02 .my_info{flex-direction: column;}
+.section02 .my_info .info_box{width:100%;}
+}
